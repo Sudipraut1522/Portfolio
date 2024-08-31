@@ -34,7 +34,7 @@ const Contact = () => {
               <div>
                 <p className="uppercase tracking-wider">Connect With Me</p>
 
-                <div className="py-4 flex items-center justify-between pt-8">
+                <div className="py-4 flex items-center justify-between pt-8 md:justify-evenly">
                   <div className=" rounded-full shadow-2xl p-6 hover:scale-105 shadow-gray-800">
                     <FaLinkedinIn />
                   </div>
@@ -54,11 +54,12 @@ const Contact = () => {
 
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form  action="https://formsubmit.co/sudipraut444@gmail.com" method="POST">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">UserName</label>
                     <input
+                    name="username"
                       type="text"
                       className="border-2 rounded-lg p-3  border-gray-300"
                     />
@@ -68,6 +69,8 @@ const Contact = () => {
                       PhoneNumber
                     </label>
                     <input
+                    name="phonenumber"
+                    required
                       type="text"
                       className="border-2 rounded-lg p-3  border-gray-300"
                     />
@@ -76,6 +79,8 @@ const Contact = () => {
                 <div className="flex flex-col">
                   <label className="text-sm py-3 uppercase">Email</label>
                   <input
+                  name="email"
+                  required
                     type="email"
                     className="border-2 rounded-lg p-3 border-gray-300"
                   />
@@ -83,20 +88,24 @@ const Contact = () => {
                 <div className="flex flex-col">
                   <label className="text-sm py-3 uppercase">Subject</label>
                   <input
-                    type="email"
+                  required
+                  name="message"
+                    type="text"
                     className="border-2 rounded-lg p-3 border-gray-300"
                   />
                 </div>
                 <div className="flex flex-col">
                   <label className="text-sm py-3 uppercase">Message</label>
                   <textarea
+                  name="message"
+                  required
                     rows={5}
                     co
                     className="border-2 rounded-lg p-3 border-gray-300"
                   />
                 </div>
                 <div className="py-4 w-full flex justify-center items-center text-center cursor-pointer bg-blue-600 mt-4 rounded-lg">
-                  <button className="uppercase text-gray-400">
+                  <button  type="submit" className="uppercase text-gray-400">
                     Send Message
                   </button>
                 </div>
@@ -106,7 +115,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center p-4">
+      <div className="flex items-center justify-center p-4 mb-10">
         <Link href="/">
           <div className="rounded-full p-4 shadow-xl shadow-gray-600 hover:scale-105 ease-in duration-300">
             <HiOutlineChevronDoubleUp size={25} color="blue-600"/>

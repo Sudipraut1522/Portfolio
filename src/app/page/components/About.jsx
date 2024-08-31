@@ -5,10 +5,10 @@ const About = () => {
     <div id="about" className="w-full p-4 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-purple-600 py-4 text-lg">about</p>
+          <p className="uppercase text-purple-600 py-4 text-lg tracking-widest">about</p>
           <h2 className="text-4xl py-4">Who I am</h2>
           <p className="py-4"> //I an not your Normal Develpoer</p>
-          <p className=" py-4">
+          <p className=" py-4 text-lg text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             laudantium velit similique vel repudiandae molestias a veritatis,
             laborum repellat ipsa assumenda sunt aut, dicta animi eum quas iste.
@@ -21,10 +21,14 @@ const About = () => {
             velit molestias molestiae praesentium facilis quos hic, suscipit vel
             corporis!
           </p>
+          <div className="bg-gradient-to-r from-[#5651e5] to-[#709dff] flex items-center justify-center p-2 rounded-lg" >
+
+          <a href="/assest/sudipcv.pdf" target="_blank">View CV</a>
+          </div>
         </div>
-        <div className="p-2 max-w-full h-auto flex justify-center items-center rounded-xl shadow-xl shadow-gray-600">
+        <div className="p-4 max-w-full h-auto flex justify-center items-center rounded-xl shadow-xl shadow-gray-600">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUame9vB-NP02ToSoouI-i_7tX2_ebNDkcg&s"
+            src="/assest/profile.jpeg"
             alt="Example Image"
             className="rounded-lg hover:scale-105 ease-in duration-300 object-cover"
           />
