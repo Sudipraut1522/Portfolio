@@ -72,7 +72,12 @@ const Navbar = () => {
                   Contact
                 </li>
               </Link>
+              <div className="ml-10 text-small uppercase hover:border-b">
+
+             <button className="uppercase">Click</button>
+              </div>
             </ul>
+
             <div onClick={handelNav} className="md:hidden">
               <AiOutlineMenu size={25} />
             </div>
@@ -94,17 +99,17 @@ const Navbar = () => {
           >
             <div>
               <div className="flex w-full items-center justify-between">
-              <Link href="/" >
-            <div className="p-2 py-4 rounded-lg">
-              <Image
-                className="hover:scale-105 ease-in duration-300 rounded-lg "
-                src="/assest/logo.jpg"
-                height={50}
-                width={50}
-                alt="logo"
-              />
-            </div>
-          </Link>
+                <Link href="/">
+                  <div className="p-2 py-4 rounded-lg">
+                    <Image
+                      className="hover:scale-105 ease-in duration-300 rounded-lg "
+                      src="/assest/logo.jpg"
+                      height={50}
+                      width={50}
+                      alt="logo"
+                    />
+                  </div>
+                </Link>
                 <div
                   onClick={handelNav}
                   className="rounded-full p-3 shadow-lg shadow-gray-400 cursor-pointer"

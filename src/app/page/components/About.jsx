@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -5,9 +6,11 @@ const About = () => {
     <div id="about" className="w-full p-4 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-purple-600 py-4 text-lg tracking-widest">about</p>
+          <p className="uppercase text-purple-600 py-4 text-lg tracking-widest">
+            about
+          </p>
           <h2 className="text-4xl py-4">Who I am</h2>
-          <p className="py-4"> //I an not your Normal Develpoer</p>
+          <p className="py-4"> I an not your Normal Develpoer</p>
           <p className=" py-4 text-lg text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             laudantium velit similique vel repudiandae molestias a veritatis,
@@ -21,13 +24,14 @@ const About = () => {
             velit molestias molestiae praesentium facilis quos hic, suscipit vel
             corporis!
           </p>
-          <div className="bg-gradient-to-r from-[#5651e5] to-[#709dff] flex items-center justify-center p-2 rounded-lg" >
-
-          <a href="/assest/sudipcv.pdf" target="_blank">View CV</a>
+          <div className="bg-gradient-to-r from-[#5651e5] to-[#709dff] flex items-center justify-center p-2 rounded-lg">
+            <a href="/assest/sudipcv.pdf" target="_blank">
+              View CV
+            </a>
           </div>
         </div>
         <div className="p-4 max-w-full h-auto flex justify-center items-center rounded-xl shadow-xl shadow-gray-600">
-          <img
+          <Image
             src="/assest/profile.jpeg"
             alt="Example Image"
             className="rounded-lg hover:scale-105 ease-in duration-300 object-cover"
