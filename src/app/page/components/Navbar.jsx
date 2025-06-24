@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -33,9 +33,9 @@ const Navbar = () => {
             : "fixed w-full h-20  z-100"
         }
       >
-        <div className="flex items-center justify-between w-full h-full px-2 2xl:px-15">
+        <div className="flex items-center ">
           <Link href="/">
-            <div className="p-2 py-4 rounded-lg">
+            <div className="p-2 px-8 py-4 rounded-lg">
               <Image
                 className="hover:scale-105 ease-in duration-300 rounded-lg "
                 src="/assest/logo.jpg"
@@ -72,10 +72,6 @@ const Navbar = () => {
                   Contact
                 </li>
               </Link>
-              <div className="ml-10 text-small uppercase hover:border-b">
-
-             <button className="uppercase">Click</button>
-              </div>
             </ul>
 
             <div onClick={handelNav} className="md:hidden">

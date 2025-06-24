@@ -6,6 +6,8 @@ const Projectitems = ({ title, background, propertyUrl }) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-600 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
       <Image
+        height={100}
+        width={100}
         src={background}
         alt="project"
         className="rounded-xl group-hover:opacity-10"

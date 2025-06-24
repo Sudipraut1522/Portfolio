@@ -32,6 +32,8 @@ const About = () => {
         </div>
         <div className="p-4 max-w-full h-auto flex justify-center items-center rounded-xl shadow-xl shadow-gray-600">
           <Image
+            width={100}
+            height={100}
             src="/assest/profile.jpeg"
             alt="Example Image"
             className="rounded-lg hover:scale-105 ease-in duration-300 object-cover"

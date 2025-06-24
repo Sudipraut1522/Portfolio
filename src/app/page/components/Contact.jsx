@@ -22,6 +22,8 @@ const Contact = () => {
             <div className="lg:p-4 w-full">
               <div>
                 <Image
+                  width={100}
+                  height={100}
                   src="https://media.istockphoto.com/id/1883285965/photo/an-unrecognizable-businesswoman-working-in-her-office-on-her-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=jx0Npn3jxtWjL7WpGzKtfL58_OxprChBqUmUSXXF-gY="
                   alt="contact"
                   className="rounded-xl hover:scale-105 ease-in duration-200"
