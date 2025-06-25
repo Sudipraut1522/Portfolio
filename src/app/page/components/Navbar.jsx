@@ -24,6 +24,7 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handelShadow);
   }, []);
+
   return (
     <div>
       <div
@@ -33,7 +34,7 @@ const Navbar = () => {
             : "fixed w-full h-20  z-100"
         }
       >
-        <div className="flex items-center ">
+        <div className="flex items-center  justify-between max-w-[80vw] mx-auto ">
           <Link href="/">
             <div className="p-2 px-8 py-4 rounded-lg">
               <Image
