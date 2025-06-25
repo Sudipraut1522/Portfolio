@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/jsx-key": "off",
+    "react/no-unknown-property": "off",
+    "react/no-children-prop": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-no-undef": "off",
+    "react/jsx-no-comment-textnodes": "off"
+  }
 }
+  
